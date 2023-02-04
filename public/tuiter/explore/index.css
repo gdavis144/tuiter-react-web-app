@@ -1,0 +1,59 @@
+.wd-settings {
+    float: right;
+    padding-right: 4px; /* 8+4 = 12 */
+}
+
+.wd-search-bar {
+    height: 20px;
+    width: 80%;
+    color: white;
+    background-color: #282c34;
+    border-style: hidden;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.wd-nav-bar {
+    margin: auto;
+}
+
+.wd-nav-link {
+    width: 8%;
+    float: left;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    text-align: center;
+    padding: 16px;
+}
+
+.wd-nav-link.wd-selected {
+    color: rgb(29,161,242);
+    border-bottom: rgb(29,161,242) solid;
+}
+
+.wd-post {
+    border: 1px solid rgb(110, 118, 125);
+    padding: 5px 10px;
+}
+
+.wd-post p {
+    margin: 5px;
+}
+
+.wd-post-subtitle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-post-text {
+    float: left;
+    width: 80%;
+}
+
+.wd-post-image {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+

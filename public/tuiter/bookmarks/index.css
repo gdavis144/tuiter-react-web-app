@@ -1,0 +1,73 @@
+.wd-page-heading {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.wd-page-subtitle {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+.wd-post {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 12px 10px;
+}
+
+.wd-inline-post {
+    margin-top: 12px;
+    border-radius: 20px;
+    border: 1px solid rgb(110, 118, 125);
+}
+
+.wd-profile-img {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-post-contents {
+    margin-left: 12px;
+    float: left;
+    max-width: 506px;
+    font-size: 15px;
+}
+
+.wd-post-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-inline-post .wd-post-contents {
+    margin: 0px;
+    padding: 12px;
+}
+
+.wd-post-icons {
+    margin: 12px 50px 0px 50px;
+}
+
+.wd-post-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.wd-post-icon-label {
+    position: relative;
+    bottom: 9px;
+    padding: 0px 12px;
+}
+
+.wd-post-icon-and-label {
+    float: left;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+p {
+    margin: 2px;
+}

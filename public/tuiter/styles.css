@@ -1,0 +1,18 @@
+.wd-body-container {
+    background-color: black;
+    color: white;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.wd-color-gray {
+    color: grey;
+}
+
+.wd-color-white {
+    color: white;
+}
+
+.wd-float-done {
+    clear: both;
+}
