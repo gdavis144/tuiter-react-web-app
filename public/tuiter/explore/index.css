@@ -1,29 +1,58 @@
+.wd-no-top-border {
+    border-top-style: hidden;
+}
+
+.wd-full-image {
+    height: 400px;
+}
+
 .wd-settings {
     float: right;
-    padding-right: 4px; /* 8+4 = 12 */
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.input-group-text {
+    height: 35px;
+    border-right: white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.wd-search-group {
+    width: 90%;
+    float: left;
 }
 
 .wd-search-bar {
-    height: 20px;
-    width: 80%;
-    color: white;
-    background-color: #282c34;
-    border-style: hidden;
-    border-radius: 10px;
-    padding-left: 30px;
+    height: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    border-left: white;
 }
 
 .wd-nav-bar {
-    margin: auto;
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+    list-style: none;
+}
+
+.wd-nav-item .nav-link {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    color: black;
+}
+
+.wd-nav-item .active {
+    background-color: rgb(59, 113, 202);
+    color: white;
 }
 
 .wd-nav-link {
-    width: 8%;
-    float: left;
     color: rgb(110, 118, 125);
-    font-size: 15px;
-    text-align: center;
-    padding: 16px;
 }
 
 .wd-nav-link.wd-selected {
@@ -31,29 +60,85 @@
     border-bottom: rgb(29,161,242) solid;
 }
 
-.wd-post {
-    border: 1px solid rgb(110, 118, 125);
-    padding: 5px 10px;
+.wd-nav-icon {
+    float: left;
+    /*padding: 5px 5px 5px 0px;*/
 }
 
-.wd-post p {
-    margin: 5px;
+.wd-nav-text {
+    float: left;
+}
+
+.wd-button {
+    width: 100%;
+    min-width: fit-content;
+    /*margin-top: 8px;*/
+    border-radius: 25px;
 }
 
 .wd-post-subtitle {
     color: rgb(110, 118, 125);
-    font-size: 13px;
+    /*margin: 0px;*/
 }
 
-.wd-post-text {
-    float: left;
-    width: 80%;
+.wd-follow-text p {
+    margin: 0px;
+    padding: 0px;
 }
 
 .wd-post-image {
-    float: right;
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    /*margin-left: 10px;*/
+}
+
+/*.card-body {*/
+/*    padding: 0.6rem 1rem;*/
+/*}*/
+
+.card-body p {
+    margin: 0px;
+}
+
+.wd-row {
+    width: 100%;
+}
+
+.wd-follow-item {
+    /*height: 50px;*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    /*padding-top: 8px;*/
+    /*padding-bottom: 8px;*/
+}
+
+/*.wd-follow-header {*/
+/*    margin: 0px;*/
+/*    padding-left: 15px;*/
+/*}*/
+
+/*.wd-follow-text {*/
+/*    padding: 0px 0px 0px 12px;*/
+/*}*/
+
+.fa-sm {
+    width: 20px;
+    height: 20px;
+}
+
+.wd-follow-image {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    /*margin-left: 10px;*/
+}
+
+.wd-follow-button {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
 }
 
