@@ -5,7 +5,7 @@ const ExploreComponent = () => {
     return(`
            <div class="input-group wd-search-group">
                 <span class="input-group-text">
-                    <i class="fas fa-search text-black"></i>
+                    <i class="git  checkout  -b  a6fas fa-search text-black"></i>
                 </span>
                 <input type="text" class="form-control wd-search-bar mb-2 pl-1" placeholder="Search Tuiter"/>
            </div>
