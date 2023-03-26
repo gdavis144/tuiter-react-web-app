@@ -1,19 +1,32 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
-        active = 'explore'
-    }) => {
+        active = 'home'
+    }
+    ) => {
+    // let active = 'explore';
+    //
+    // const dispatch = useDispatch();
+    const changeActive = (name) => {
+        console.log("changed to" + name);
+        active = name;
+        // dispatch();
+    }
     return (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
-            <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+            <a href="/" className={`list-group-item
+                    ${active === 'home'?'active':''}`}
+               onClick={() => changeActive('home')}>
                 <i className="fas fa-home wd-nav-icon p-1"></i>
                 Home
             </a>
-            <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+            <a href="tuiter/explore" className={`list-group-item
+                    ${active === 'explore'?'active':''}`}
+               onClick={() => changeActive('explore')}>
                 <i className="fas fa-hashtag wd-nav-icon p-1"></i>
                 Explore
             </a>
