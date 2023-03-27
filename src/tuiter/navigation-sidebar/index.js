@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -9,16 +10,16 @@ const NavigationSidebar = (
     return (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
-            <a href="/tuiter" className={`list-group-item
+            <Link to="/tuiter" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
                 <i className="fas fa-home wd-nav-icon p-1"></i>
                 Home
-            </a>
-            <a href="/tuiter/explore" className={`list-group-item
+            </Link>
+            <Link to="/tuiter/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                 <i className="fas fa-hashtag wd-nav-icon p-1"></i>
                 Explore
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 <i className="fas fa-bell wd-nav-icon p-1"></i>

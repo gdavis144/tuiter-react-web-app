@@ -5,6 +5,7 @@ import Tuiter from "./tuiter";
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
+import Explore from "./tuiter/explore";
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
                   <Route index element={<Labs/>}/>
                   <Route path="/hello"
                          element={<HelloWorld/>}/>
-                  <Route path="/tuiter/*"
+                  <Route path="/tuiter/"
                          element={<Tuiter/>}/>
+                  <Route path="tuiter/explore"
+                         element={<Explore/>}/>
                   <Route path="/*" element={<Labs/>}/>
               </Routes>
           </div>
