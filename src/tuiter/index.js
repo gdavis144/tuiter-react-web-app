@@ -10,23 +10,24 @@ import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
 import homeReducer from "./tuits/tuits-reducer";
 import HomeComponent from "./home";
-import {Route, Routes} from "react-router";
+import {Route, Routes, useLocation} from "react-router";
 const store = configureStore({
     reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeReducer}});
 
 function Tuiter() {
     return (
         <Provider store={store}>
+
         <div className="row mt-2">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                <NavigationSidebar/>
+                <NavigationSidebar active={useLocation().pathname.startsWith("/tuiter/explore") ? "explore" : "home"}/>
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                  style={{"position": "relative"}}>
                 <Routes>
                     <Route index path="/"
                            element={<HomeComponent/>}/>
-                    <Route path="explore"
+                    <Route path="/explore"
                            element={<ExploreComponent/>}/>
                 </Routes>
             </div>

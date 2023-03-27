@@ -7,26 +7,17 @@ const NavigationSidebar = (
         active = 'home'
     }
     ) => {
-    // let active = 'explore';
-    //
-    // const dispatch = useDispatch();
-    const changeActive = (name) => {
-        console.log("changed to" + name);
-        active = name;
-        // dispatch();
-    }
+
     return (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
-            <a href="/" className={`list-group-item
-                    ${active === 'home'?'active':''}`}
-               onClick={() => changeActive('home')}>
+            <a href="/tuiter" className={`list-group-item
+                    ${active === 'home'?'active':''}`}>
                 <i className="fas fa-home wd-nav-icon p-1"></i>
                 Home
             </a>
-            <a href="tuiter/explore" className={`list-group-item
-                    ${active === 'explore'?'active':''}`}
-               onClick={() => changeActive('explore')}>
+            <a href="/tuiter/explore" className={`list-group-item
+                    ${active === 'explore'?'active':''}`}>
                 <i className="fas fa-hashtag wd-nav-icon p-1"></i>
                 Explore
             </a>
