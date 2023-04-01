@@ -16,7 +16,8 @@ import {Route, Routes, useLocation} from "react-router";
 const store = configureStore({
     reducer: {
         who: whoReducer,
-        tuitsData: tuitsReducer}});
+        tuitsData: tuitsReducer}
+});
 
 function Tuiter() {
     return (
