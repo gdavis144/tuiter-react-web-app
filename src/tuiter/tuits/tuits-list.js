@@ -6,7 +6,6 @@ import {findTuitsThunk}
     from "../../services/tuits-thunks";
 
 const TuitsList = () => {
-    //const tuitsArray = useSelector(state => state.homeTuits)
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();
@@ -23,7 +22,7 @@ const TuitsList = () => {
             }
             {
                 tuits.map(post =>
-                    <TuitItem key={post._id} post={post}/> )
+                    <TuitItem key={post._id} post={post}/>)
             }
         </ul>
     );
