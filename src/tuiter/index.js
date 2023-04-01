@@ -11,8 +11,12 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import homeReducer from "./tuits/tuits-reducer";
 import HomeComponent from "./home";
 import {Route, Routes, useLocation} from "react-router";
+//const store = configureStore({
+    //reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeReducer}});
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeReducer}});
+    reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (

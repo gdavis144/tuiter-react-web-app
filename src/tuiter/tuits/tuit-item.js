@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import React from "react";
-import {deleteTuit, toggleLike} from "./tuits-reducer";
+import {toggleLike} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         post = {
@@ -21,11 +22,14 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
-    const likeTuitHandler = (id) => {
-        dispatch(toggleLike(id));
+    const likeTuitHandler = (tuit) => {
+        dispatch(updateTuitThunk({
+            ...tuit,
+            like: (tuit.liked)? (tuit.likes - 1) : (tuit.likes + 1)
+        }));
     }
 
     const likedIcon = post.liked ? "fa-solid text-danger fa-heart pe-1" : "fa-regular fa-heart pe-1"
@@ -48,7 +52,7 @@ const TuitItem = (
                         <label className="col-3"><i className="fa-regular fa-comment pe-1"></i>{post.replies}</label>
                         <label className="col-3"><i className="fa-solid fa-repeat pe-1"></i>{post.retuits}</label>
                         <label className="col-3"><i className={likedIcon}
-                                                    onClick={() => likeTuitHandler(post._id)}></i>{post.likes}</label>
+                                                    onClick={() => likeTuitHandler(post)}></i>{post.likes}</label>
                         <label className="col-3"><i className="fa-solid fa-share-nodes pe-1"></i></label></div>
                 </div>
             </div>
