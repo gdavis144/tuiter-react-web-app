@@ -44,10 +44,10 @@ const TuitItem = (
                     <div>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(post._id)}></i>
-                        <b>{post.userName}</b>
+                        <b>{post.username}</b>
                         <i className="fa-solid fa-circle-check text-primary ps-2 pe-2"></i>
                         {post.handle} . {post.time}</div>
-                    <div>{post.title}</div>
+                    <div>{post.tuit}</div>
                     <div>
                         <label className="col-3"><i className="fa-regular fa-comment pe-1"></i>{post.replies}</label>
                         <label className="col-3"><i className="fa-solid fa-repeat pe-1"></i>{post.retuits}</label>
